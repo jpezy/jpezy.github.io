@@ -125,13 +125,13 @@ $("#walker").css("top", walker.y);
 
 function wallCollision() {
   if (walker.x < 0) {
-walker.x -= speedX;
+walker.x -= walker.speedX;
   } if (walker.x + 50 > $("#board").width()) {
-    walker.x -= speedX;
+    walker.x -= walker.speedX;
   } if (walker.y < 0) {
-    walker.y -= speedY;
+    walker.y -= walker.speedY;
   } if (walker.y + 50 > $("#board").height()) {
-    walker.y -= speedY;
+    walker.y -= walker.speedY;
   }
 }
 
